@@ -13,7 +13,7 @@
      margin: 0;
      display: flex;
      height: 100vh;
-     background-color: #121212;
+     background-color: #10131a;
      color: white;
  }
 
@@ -26,15 +26,30 @@
     align-items: center;
 }
 
-.logo img{
+.logo {
     width: 40px;
     height: auto;
     color: #ffffff;
 }
 
-nav ul li .gray{
+nav ul li {
     color: #5c5c5c;
     width: 20px;
     height: 10vh;
     margin-top: 25px;
+    list-style-type: none;
 }
+
+.playlist-section {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+.title-info {
+    display: none;
+}
+
