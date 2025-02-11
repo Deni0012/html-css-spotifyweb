@@ -61,3 +61,17 @@ a {
     color: #ffffff;
 }
 
+button {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.user-profile img {
+    width: 20px;
+    height: auto;
+    margin-top: 15px;
+    color: #ffffff;
+}
