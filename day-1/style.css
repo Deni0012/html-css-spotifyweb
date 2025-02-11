@@ -29,5 +29,12 @@
 .logo img{
     width: 40px;
     height: auto;
-    color: white;
+    color: #ffffff;
+}
+
+nav ul li .gray{
+    color: #5c5c5c;
+    width: 20px;
+    height: 10vh;
+    margin-top: 25px;
 }
