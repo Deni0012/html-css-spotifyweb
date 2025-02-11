@@ -53,3 +53,11 @@ a {
     display: none;
 }
 
+
+.install-app img {
+    width: 30px;
+    height: auto;
+    margin-top: 200px;
+    color: #ffffff;
+}
+
