@@ -6,12 +6,17 @@
     <title>Spotify Web</title>
     <!-- Foglio di stile  -->
      <link rel="stylesheet" href="style.css">
-     <!-- Font del progetto -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- Font del progetto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
 
@@ -26,8 +31,29 @@
                 <a href="#"><img src="img-day-1/logo.svg" alt="logo spotify" class="logo-spotify"></a>
             </div>
             <!-- Lista delle opzioni -->
-            <div id="menu">menu</div>
-            <div id="playlist">playlists</div>
+            <ul id="menu">
+                <li><a href="#"><img src="img-day-1/home.svg" alt="Home"><span class="title-info">Home</span></a></li>
+
+                <li><a href="#"><img src="img-day-1/search.svg" alt="Cerca"><span class="title-info">Cerca</span></a></li>
+
+                <li><a href="#"><img src="img-day-1/libreria.svg" alt="La tua libreria"><span class="title-info">La tua libreria</span></a></li>
+            </ul>
+
+
+
+            <!-- Playlist -->
+            <div id="playlist">
+                <h5>PLAYLISTS</h5>
+                <ul>
+                    <li><a href="#"><i class="fas fa-plus-square"></i> <span>Crea Playlist</span></a></li>
+                    <li><a href="#"><span class="title-info">Nome Playlist</span></a></li>
+                    <li><a href="#"><span class="title-info">Nome Playlist</span></a></li>
+                    <li><a href="#"><span class="title-info">Nome Playlist</span></a></li>
+                    <li><a href="#"><span class="title-info">Nome Playlist</span></a></li>
+                </ul>
+            </div>
+
+             <!-- Profilo e installa app -->
             <div id="profilo">profilo</div>
         </div>
       
