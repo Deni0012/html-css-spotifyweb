@@ -89,8 +89,23 @@ body {
 }
 
 
+.main-content .sidebar #profilo a img {
+    width: 30px;
+    color: #ffff;
+    opacity: 0.7;
+}
+
+
 .main-content .sidebar #profilo {
     margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.main-content .sidebar #profilo .title-info {
+    display: none;
 }
 
 .main-content main {
@@ -147,6 +162,19 @@ footer {
 
     .main-content .sidebar #playlist li a i {
         font-size: 30px;
+    }
+
+     .main-content .sidebar #profilo .title-info {
+        display: inline;
+        color: #5c5c5c;
+    }
+
+    .main-content .sidebar #profilo {
+        margin-top: auto;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    
     }
         
 
