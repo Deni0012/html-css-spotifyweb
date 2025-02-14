@@ -1,0 +1,184 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* common */
+body {
+    font-family: "Montserrat", serif;
+    height: 100vh;
+    background-color: #10131a;
+}
+
+.main-content {
+    height: calc(100% - 90px);
+    background-color: #151922;
+    display: flex;
+    color: white;
+}
+
+.main-content .sidebar {
+    background-color: #000000;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .sidebar #logo {
+    padding: 0 20px;
+}
+
+.main-content .sidebar #logo .logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 13px;
+}
+
+.main-content .sidebar #logo .logo-spotify {
+   display: none;
+}
+
+.main-content .sidebar #menu {
+    padding: 20px 10px;
+}
+
+.main-content .sidebar #menu li {
+    margin-bottom: 10px;
+}
+
+.main-content .sidebar #menu li a {
+     color: #ffff;
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     justify-content: center;
+     opacity: 0.7;
+}
+
+ .main-content .sidebar #menu li a .title-info {
+    display: none;
+ }
+
+
+.main-content .sidebar #menu li a img {
+    width: 25px;
+}
+
+.main-content .sidebar #playlist {
+    color: #ffff;
+    
+}
+
+.main-content .sidebar #playlist li a {
+    display: none;
+}
+
+.main-content .sidebar #playlist li a .title-info {
+    display: none;
+}
+
+
+.main-content .sidebar #profilo a img {
+    width: 30px;
+    color: #ffff;
+    opacity: 0.7;
+}
+
+
+.main-content .sidebar #profilo {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.main-content .sidebar #profilo .title-info {
+    display: none;
+}
+
+.main-content main {
+    background-color: #151922;
+    flex-grow: 1;
+}
+
+.main-content main .top-main {
+   height: 90px;
+   background-color: #10131a;
+}
+
+footer {
+    height: 90px;
+    background-color: #5c5c5c;
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    .main-content .sidebar {
+          width: 230px;
+    }
+
+    .main-content .sidebar #logo .logo {
+          display: none;
+    }
+
+    .main-content .sidebar #logo .logo-spotify {
+          display: inline;
+          width: 130px;
+    }
+
+    .main-content .sidebar #menu li a{
+        justify-content: flex-start;
+    }
+
+    .main-content .sidebar #menu li a .title-info {
+        display: inline;
+    }
+
+    .main-content .sidebar #playlist li a .title-info {
+         display: inline;
+        color: #ffff;
+        opacity: 0.7;
+        gap: 5px;
+    }
+
+    .main-content .sidebar #playlist li a {
+        display: flex;
+        align-items: center;
+        color: #5c5c5c;
+        margin-top: 10px;
+    }
+
+    .main-content .sidebar #playlist li a i {
+        font-size: 30px;
+    }
+
+     .main-content .sidebar #profilo .title-info {
+        display: inline;
+        color: #5c5c5c;
+    }
+
+    .main-content .sidebar #profilo {
+        margin-top: auto;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    
+    }
+        
+
+
+}
+
+
