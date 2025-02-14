@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
     <!-- Foglio di stile  -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <!-- Font del progetto -->
+    <!-- Font del progetto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
 
     <!-- contenuto del main -->
     <div class="main-content">
 
         <div class="sidebar">
-          
-          <!-- logo -->
+
+            <!-- logo -->
             <div id="logo">
                 <a href="#"><img src="img-day-1/logo-small.svg" alt="logo-small" class="logo"></a>
                 <a href="#"><img src="img-day-1/logo.svg" alt="logo spotify" class="logo-spotify"></a>
@@ -34,9 +36,11 @@
             <ul id="menu">
                 <li><a href="#"><img src="img-day-1/home.svg" alt="Home"><span class="title-info">Home</span></a></li>
 
-                <li><a href="#"><img src="img-day-1/search.svg" alt="Cerca"><span class="title-info">Cerca</span></a></li>
+                <li><a href="#"><img src="img-day-1/search.svg" alt="Cerca"><span class="title-info">Cerca</span></a>
+                </li>
 
-                <li><a href="#"><img src="img-day-1/libreria.svg" alt="La tua libreria"><span class="title-info">La tua libreria</span></a></li>
+                <li><a href="#"><img src="img-day-1/libreria.svg" alt="La tua libreria"><span class="title-info">La tua
+                            libreria</span></a></li>
             </ul>
 
 
@@ -53,41 +57,105 @@
                 </ul>
             </div>
 
-             <!-- Profilo e installa app -->
+            <!-- Profilo e installa app -->
             <div id="profilo">
                 <a href="#"><img src="img-day-1/download.svg" alt="Installa App">
                     <span class="title-info">Installa App</span></a>
-                
+
                 <hr class="title-info">
 
                 <a href="#"><img src="img-day-1/profile.svg" alt="Denise Di Genni">
                     <span class="title-info">Denise Di Genni</span></a>
-            
-            
+
+
             </div>
         </div>
-      
+
         <!-- main -->
         <main>
-            <div class="top-main">
-                <div class="nav-bar">
-                    <ul>
-                        <li class="active">IN EVIDENZA</li>
-                        <li>PODCAST</li>
-                        <li>CLASSIFICHE</li>
-                        <li>GENERI E MOOD</li>
-                        <li>NUOVE USCITE</li>
-                        <li>SCOPRI</li>
-                    </ul>
-                    <button class="upgrade-btn">EFFETTUA L'UPGRADE</button>
+            <header class="top-main">
+                <button class="upgrade-btn">Effettua l'upgrade</button>
+            </header>
+            <nav class="menu-content">
+                <ul>
+                    <li id="active">IN EVIDENZA</li>
+                    <li>PODCAST</li>
+                    <li>CLASSIFICHE</li>
+                    <li>GENERI E MOOD</li>
+                    <li>NUOVE USCITE</li>
+                    <li>SCOPRI</li>
+                </ul>
+            </nav>
+            <section class="recently-played">
+                <h2>Recently played</h2>
+                <div class="album-grid">
+                    <div class="album">
+                        <div class="album-img"><img src="img-day-1/metal_lifting.jpg" alt="Metal Heavy"></div>
+                        <p class="album-title">Heavy Metal</p>
+                        <p class="album-subtitle">Subtitle</p>
+                    </div>
+                    <div class="album">
+                        <div class="album-img"><img src="img-day-1/stranger.jpeg" alt="Stranger Things"></div>
+                        <p class="album-title">Stranger Things, Vol. 1</p>
+                        <p class="album-subtitle">Kyle Dixon & Michael Stein</p>
+                    </div>
+                    <div class="album">
+                        <div class="album-img"><img src="img-day-1/aquietplace.jpeg" alt="A Quiet Place"></div>
+                        <p class="album-title">A quiet place</p>
+                        <p class="album-subtitle">Subtitle</p>
+                    </div>
+                    <div class="album">
+                        <div class="album-img"><img src="img-day-1/split.jpeg" alt="Split"></div>
+                        <p class="album-title">Split</p>
+                        <p class="album-subtitle">Subtitle</p>
+                    </div>
+                    <div class="album">
+                        <div class="album-img"><img src="img-day-1/cure.jpeg" alt="Cure"></div>
+                        <p class="album-title">A cure for wellness</p>
+                        <p class="album-subtitle">Subtitle</p>
+                    </div>
+                    <div class="album">
+                        <div class="album-img"><img src="img-day-1/sinister.jpeg" alt="Sinister"></div>
+                        <p class="album-title">Sinister</p>
+                        <p class="album-subtitle">Subtitle</p>
+                    </div>
                 </div>
-            </div>
+            </section>
+            
+            <section class="created-for-you">
+                <h2>Creato per John Doe</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div class="playlist-grid">
+                    <div class="playlist">
+                        <div class="playlist-img"><img src="img-day-1/radar.jpeg" alt="Radar"></div>
+                        <p class="playlist-title">Release Radar</p>
+                    </div>
+                    <div class="playlist">
+                        <div class="playlist-img"><img src="img-day-1/mixdaily.jpeg" alt=""></div>
+                        <p class="playlist-title">Daily Mix 1</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="popular-artists">
+                <h2>Artisti più popolari</h2>
+                <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div class="artist-grid">
+                    <div class="artist">
+                        <div class="artist-img"><img src="img-day-1/youg.jpeg" alt="Young and Beatiful"></div>
+                    </div>
+                    <div class="artist">
+                        <div class="artist-img"><img src="img-day-1/einaudi.jpeg" alt="Einaudi"></div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
-    
+
     <!-- parte finale del file -->
     <footer>
         ciao
     </footer>
 </body>
+
 </html>
