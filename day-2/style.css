@@ -14,12 +14,14 @@ ul {
     list-style-type: none;
 }
 
-/* correzione */
+/* Common */
 body {
     font-family: "Montserrat", serif;
     height: 100vh;
     background-color: #10131a;
 }
+
+/* main */
 
 .main-content {
     height: calc(100% - 90px);
@@ -27,6 +29,8 @@ body {
     display: flex;
     color: white;
 }
+
+/* sidebar */
 
 .main-content .sidebar {
     background-color: #000000;
@@ -77,6 +81,7 @@ body {
 
 .main-content .sidebar #playlist {
     color: #ffff;
+    margin-left: 12px;
 
 }
 
@@ -108,30 +113,37 @@ body {
     display: none;
 }
 
-.main-content main {
+main {
+    width: calc(100% - 230px);
     background-color: #151922;
-    flex-grow: 1;
+    overflow-y: auto;
 }
 
+
 .main-content main .top-main {
-    height: 90px;
+   
     background-color: #10131a;
 }
 
 
 .top-main {
+    height: 90px;
     display: flex;
     justify-content: flex-end;
     padding: 10px;
-    background-color: #121212;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .upgrade-btn {
+    margin-top: 20px;
     background-color: transparent;
     color: white;
     border: 1px solid white;
-    padding: 5px 10px;
-    border-radius: 10px;
+    width: 220px;
+    padding: 15px 15px 15px 35px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 35px;
     cursor: pointer;
 }
 
@@ -158,10 +170,9 @@ body {
 
 .album-grid,
 .playlist-grid,
-.artist-grid {
+.artist-grid  {
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    width: calc((100% - 50px) / 6);
 }
 
 .album,
@@ -171,11 +182,8 @@ body {
     text-align: center;
 }
 
-.album-img,
-.playlist-img,
-.artist-img {
-    width: 25px;
-}
+
+
 
 
 footer {
@@ -218,10 +226,12 @@ footer {
         align-items: center;
         color: #5c5c5c;
         margin-top: 10px;
+        
     }
 
     .main-content .sidebar #playlist li a i {
         font-size: 30px;
+        margin-right: 5px;
     }
 
     .main-content .sidebar #profilo .title-info {
